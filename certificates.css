@@ -93,32 +93,36 @@
     letter-spacing: 1px;
 }
 
-/* COMPACT CERTIFICATE PHOTO STYLE */
+/* Full Image Ratio */
 .cert-img-container {
     position: relative;
     width: 100%;
-    /* Reduced height for a more compact "mini" look */
-    height: 140px; 
+    /* Standard certificate ratio is roughly 1.4:1 */
+    aspect-ratio: 1.41; 
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 15px;
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     background: #0b0e14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cert-preview-img {
     width: 100%;
     height: 100%;
-    /* 'contain' ensures the whole certificate is visible even in a smaller box */
+    /* 'contain' ensures the full image fits inside the box without cropping */
     object-fit: contain; 
-    padding: 5px;
+    padding: 2px;
     transition: transform 0.3s ease;
 }
 
-/* Make the overall card slightly narrower for the mini style */
+/* Make sure the card itself is wide enough to hold the landscape image */
 .cert-card-premium {
-    max-width: 320px;
-    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Slightly wider to let the certificate breathe */
+    padding: 15px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;

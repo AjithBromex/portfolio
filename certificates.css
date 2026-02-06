@@ -98,7 +98,7 @@
     position: relative;
     width: 100%;
     /* Standard certificate ratio is roughly 1.4:1 */
-    aspect-ratio: 1.41; 
+    aspect-ratio: 1.41;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -113,7 +113,7 @@
     width: 100%;
     height: 100%;
     /* 'contain' ensures the full image fits inside the box without cropping */
-    object-fit: contain; 
+    object-fit: contain;
     padding: 2px;
     transition: transform 0.3s ease;
 }
@@ -121,7 +121,8 @@
 /* Make sure the card itself is wide enough to hold the landscape image */
 .cert-card-premium {
     width: 100%;
-    max-width: 400px; /* Slightly wider to let the certificate breathe */
+    max-width: 400px;
+    /* Slightly wider to let the certificate breathe */
     padding: 15px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
